@@ -594,7 +594,7 @@ body {
   padding: 8px 24px 8px 24px;
   color: #fff;
   text-align: center;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -603,6 +603,7 @@ body {
   justify-content: center;
   min-width: 165px;
   height: 40px;
+  border: none;
 }
 
 .footer-send-icons {
@@ -657,12 +658,10 @@ body {
   min-height: 584px;
   border-radius: 4px;
   background: #fcfcfc;
-  box-shadow: 0px 0px 16px rgba(46, 47, 66, 0.08),
-    0px -11px 111px rgba(46, 47, 66, 0.16), 0px 12px 11px rgba(46, 47, 66, 0.08);
-
-  /* margin-right: auto; */
-  /* margin-left: auto; */
-  padding: 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn {
@@ -670,14 +669,20 @@ body {
   top: 24px;
   right: 24px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
   border-radius: 50%;
-  border-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   stroke: #2e2f42;
   fill: #2e2f42;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   /* margin: auto; */
 }
 
@@ -690,19 +695,18 @@ body {
 .close-btn:focus {
   stroke: #fff;
   fill: #fff;
+  border: none;
 }
 
 .close-btn-icon {
   margin: auto;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* =========== MODAL FORM ========= */
 
 .title-form {
   /* display: block; */
-  margin-top: 72px;
-  margin-bottom: 16px;
   color: #2e2f42;
   text-align: center;
 
@@ -717,8 +721,11 @@ body {
 
 .form-label {
   display: block;
-  margin-top: 8px;
   color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 
   /* Small Text */
   font-family: Roboto;
@@ -727,16 +734,20 @@ body {
   font-weight: 400;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
+  margin-bottom: 4px;
 }
-
+.forms-input-wrapper {
+  margin-bottom: 8px;
+}
 .form-input {
   padding-left: 38px;
-  margin-top: 4px;
   width: 100%;
-  height: 58px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: transparent;
+  outline: transparent;
 }
 
 .form-input.text-comment {
