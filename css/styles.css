@@ -709,7 +709,7 @@ body {
   /* display: block; */
   color: #2e2f42;
   text-align: center;
-
+  margin-bottom: 16px;
   /* Body Medium */
   font-family: Roboto;
   font-size: 16px;
@@ -816,6 +816,10 @@ body {
   font-weight: 400;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.48px;
+}
+
+.link-privacy {
+  color: #4d5ae5;
 }
 
 .text-comment::placeholder {
