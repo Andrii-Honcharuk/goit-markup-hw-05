@@ -551,6 +551,63 @@ body {
   fill: var(--cloud);
 }
 
+.footer-form-title {
+  color: #fff;
+
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 16px;
+}
+.form-footer {
+  display: flex;
+  gap: 24px;
+}
+
+.form-footer-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  /* display: inline-block; */
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.form-footer-input::placeholder {
+  color: #fff;
+}
+
+.footer-form-btn {
+  display: flex;
+  border-radius: 4px;
+  background: #4d5ae5;
+  padding: 8px 24px 8px 24px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  align-items: center;
+  justify-content: center;
+  min-width: 165px;
+  height: 40px;
+}
+
+.footer-send-icons {
+  margin-left: 16px;
+}
 .socials-contacts-footer-container {
   /* display: flex;
   justify-content: space-between; */
