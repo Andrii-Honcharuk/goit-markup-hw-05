@@ -500,7 +500,10 @@ body {
   /* Body */
   line-height: 1.5;
   max-width: 264px;
-  margin-right: 120px;
+}
+
+.footer-socals-container {
+  margin-right: 80px;
 }
 
 .social-media-footer-title {
